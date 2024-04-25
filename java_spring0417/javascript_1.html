@@ -1,0 +1,84 @@
+<!-- javascript
+document:문서(모든 문서의 부모)
+window:창(모든 창의 부모) -->
+
+<!-- documenttype:문서타입 -->
+<!-- 문서타입의 html형식 선언 -->
+<!-- 웹으로 출력:html -->
+
+<!-- 상속이 젤 어렵다
+Object
+    큰곳에서 작은곳으로 간다(모든 객체지향프로그래밍)
+    지구.대한민국.서울시.송파구.가락동.송파여성인력개발센터.3층.304호.김현호선생님
+    지구.미국
+    지구.스페인
+    지구.하와이
+지구=Object
+
+Object -> 해당하는 지역
+Spring,
+서울시.송파구.가락동.송파여성인력개발센터
+    송파여성인력개발센터.1층
+    송파여성인력개발센터.2층
+    송파여성인력개발센터.3층
+    송파여성인력개발센터.4층
+    송파여성인력개발센터.5층 -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<!-- head: javascript,css,meta,title  설정 링크 -->
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javascript_1</title>
+
+<!-- ctrl+h : 전체검색,전체바꾸기-->
+<!-- ctrl+shift+r : 파일검색 -->
+<!-- alt+방향키 : 페이지 이동-->
+
+<!-- javascript,jquery,react,node,es6,typescript,vbjavascript -->
+<script>
+
+    // method: 함수
+    // function 메소드이름(argument(인자),argument2,argument3...)
+    // argument는 무한으로 올 수 있고 기본으로 올 수 있다
+    // ()있는것은 무조건 동사(움직인다)이다
+    // 변수: 하나의 값만 가진다 var name='이나래'
+
+    function GoogleMain(){
+    //var: Object  모든 타입을 다 가질 수 있다(포함하고있다)
+    //es6(2019 javascript)
+
+    //모든 객체지향 언어 변수: 오른쪽에서 왼쪽으로 값이 이동(저장)한다
+    //frm(변수명)
+    var frm=document.googlemain;
+    //get: url에 파라미터값이 붙어서 넘어간다(255넘으면 잘림)
+    //post: 내부적으로 파라미터값이 넘어간다(url  값이 안보인다)
+    //405 에러  liveserver에서 지원하지않음
+    frm.method="get";
+    frm.action="https://www.google.com/?hl=ko";
+    //모든 파라미터의 이름을 다음페이지로 넘긴다
+    //frm.submit();
+    }
+
+</script>
+
+</head>
+<body>
+    <form name="googlemain">
+        <!-- parameter name:userid -->
+        userid<input type="text" name="userid" required><br>
+        <!-- parameter name:passwd -->
+        <!-- 별포로 출력 -->
+        password<input type="password" name="passwd" required><br>
+        <!-- 이벤트 처리(버튼을 누르면 어떤행위가 있다) -->
+        <input type="submit" value="login" onclick="GoogleMain()">
+    </form>
+    <!-- 한번에 이해하자 -->
+    <!-- form: form body 안에 있어야한다 -->
+    <!-- form 안에 파라미터 이름(값)이 있어야 다음 페이지로 값이 넘어간다 -->
+
+</body>
+</html>

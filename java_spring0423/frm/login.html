@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <script>
+
+        function Login() {
+
+            // ; :  해당하는 라인을 마쳤다
+
+            //대한민국.서울시.송파구.가락동.송파여성인력센터.3층.304호.이나래
+            //모든 객체지향은 큰곳에서 작은곳으로 간다
+            //객체지향: java, javascript,php,python,c,c++,android
+            // 대소문자 구별
+            //document: 문서 모든 파일의 부모
+            var frm = document.loginfrm;
+            
+            //window: 모든 창의 부모
+            // window.alert() = "get";
+            alert('로그인 준비중!!');
+            //value(값) : 로그인 값
+            alert(frm.userid.value);
+            alert(frm.password.value);
+
+        }
+
+
+    </script>
+
+
+</head>
+
+<body>
+
+    <!-- form 안에 name 있어야 다음 페이지에 값이 넘어간다 -->
+    <form name="loginfrm">
+
+        userid<input type="email" name="email"> <br>
+        password<input type="password" name="password"> <br>
+        <input type="button" value="클릭" onclick="Login()">
+
+    </form>
+
+</body>
+
+</html>

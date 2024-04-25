@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>240418 question</title>
+
+    <script>
+        function Address(){
+            var frm = document.address;
+            console.log('이름:'+frm.name.value);
+            console.log('핸드폰:'+frm.phone.value);
+            console.log('이메일:'+frm.email.value);
+            //window 생략가능
+            window.alert(frm.name.value+' '+frm.phone.value+' '+frm.email.value);
+        }
+
+    </script>
+
+
+</head>
+<body>
+
+    <form name="address">
+        이름<input type="text" name="name"><br>
+        핸드폰<input type="number" name="phone"><br>
+        이메일<input type="email" name="email"><br>
+        <input type="button" value="확인" onclick="Address()">
+    </form>
+    
+    
+</body>
+</html>

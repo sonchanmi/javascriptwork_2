@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<!-- alt+<> 이전 다음 페이지 이동 -->
+    <script>
+        function NaverLogin() {
+       var frm = document.naverloginform ;
+       frm.method="get";
+       frm.action="naversucess.html"
+    }
+    </script>
+
+
+</head>
+
+<body>
+
+    <form name="naverloginform">
+        <table border="1" width="300" height="200">
+            <tr>
+                <td>이메일</td>
+                <td><input type="email" id="email"></td>
+            </tr>
+            <tr>
+                <td>비밀번호</td>
+                <td><input type="password"></td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center"><input type="submit" value="login" onclick="NaverLogin()"></td>
+            </tr>
+        </table>
+        
+
+    </form>
+
+</body>
+
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form login</title>
+</head>
+
+<body>
+    <!-- table>tr*3>td*2>input:t -->
+    <form action="formnext.html">
+        <!-- 아이디 / 패스워드 버튼 -->
+        <table border="2" width="265" height="150">
+            <tr>
+                <td>아이디</td>
+                <td><input type="text" name="name" id="name" required></td>
+            </tr>
+            <tr>
+                <td>패스워드</td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <!-- button: 이벤트 처리를 해주어야한다 -->
+                <!-- submit:다음페이지로 이동 -->
+                <td colspan="2" align="center"><input type="submit" value="로그인"></td>
+
+            </tr>
+        </table>
+    </form>
+
+<br><br><br>
+    <form action="/singup" method="post">
+        <div class="form-example">
+            <label for="name">이름</label>
+            <input type="text" name="name" id="name" required>
+        </div>
+        <div class="form-example">
+            <label for="email">이메일</label>
+            <input type="email" name="email" id="email" required>
+        </div>
+        <div class="form-example">
+            <input type="submit" value="제출하기">
+        </div>
+    </form>
+</body>
+
+</html>

@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+
+</head>
+
+<body>
+
+    <script>
+
+        var choice = 2;
+
+        // switch 선택
+        // ctrl+h 찾기
+
+        switch (choice) {
+            case 1:
+                console.log('1 선택 ' + choice);
+                break;
+
+            case 2:
+                console.log('2 선택 ' + choice);
+                break;
+
+            case 3:
+                console.log('3 선택 ' + choice);
+                break;
+
+            default:
+                break;
+
+        }
+
+
+    </script>
+
+
+<script>
+
+console.log("=======================1")
+
+//for 초기식; 조건식; 증강식(조건식이 맞으면 {괄호실행})
+for(var i=0;i<=10;i++){
+
+    console.log(i);
+
+} 
+
+console.log("=======================2")
+
+//2~11까지 출력
+
+for(var i=2;i<=11;i++){
+
+    console.log(i)
+}
+
+
+console.log("=======================3")
+
+//2~11 까지 합을 출력
+var sum=0;
+for(var index=2;index<=11;index++){
+
+    sum = sum+index;
+
+    console.log(sum);
+
+}
+
+console.log("=======================4")
+// 0~13 합을 출력
+var sum=0;
+for(var index=0;index<=13;index++){
+
+    sum = sum+index;
+    console.log(sum);
+
+}
+
+
+
+// sum 출력 index 0~13
+// sum = sum+index
+// sum = 0+0 = 0
+// sum = 0+1(index++)=1
+// sum = 1+2(index++)=3
+// sum = 3+3(index++)=6
+// sum = 6+4(index++)=10
+// sum = 10+5(index++)=15
+// sum = 15+6(index++)=21
+// sum = 21+7(index++)=28
+// sum = 28+8(index++)=36
+// sum = 36+9(index++)=45
+// sum = 45+10(index++)=55
+// sum = 55+11(index++)=66
+// sum = 66+12(index++)=78
+// sum = 66+13(index++)=91
+
+
+console.log("=======================5")
+// 0~13 합을 출력
+var sum=0;
+for(var index=0;index<=13;index++){
+
+    sum = sum+index;
+
+}
+//결과만 보고 싶을 때
+console.log(sum);
+</script>
+
+<script>
+console.log("=======================6")
+// while(조건){true 괄호실행}
+
+    var init = 5;
+
+    while (++init<=10) {
+
+        console.log(init);
+        
+    }
+
+console.log("=======================7")
+
+//1~10 합을 구하시오
+    
+    var init = 0;
+    var sum = 0;
+    while (++init<=10) {
+
+        sum = sum+init;
+    }
+
+    console.log(sum);
+
+ console.log("=======================8")
+//0~11 합 구하시오
+
+var init = 0;
+var sum = 0;
+while (init<=11) {
+
+    sum = sum+init;
+    ++init;
+
+
+}
+
+console.log(sum);
+
+console.log("=======================9")
+
+// do  한번만 실행 조건이 맞으면 실행
+// 1~10까지 출력
+
+init=1;
+do {
+
+    console.log(init);
+    
+} while (++init<=10);
+console.log("=======================10")
+// 0~11까지 출력
+
+init=0;
+do {
+
+    console.log(init)
+    
+} while (++init<=11);
+
+console.log("=======================11")
+
+init=0;
+sum=0;
+do {
+    sum=sum+init;
+    console.log(init);
+} while (++init<=11);
+
+console.log("=======================12")
+
+console.log(sum);
+</script>
+
+
+</body>
+
+</html>

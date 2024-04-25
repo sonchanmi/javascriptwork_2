@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>쿠팡로그인 출력</title>
+
+    <script>
+        function CoupangInputLogin() {
+            var frm = document.coupanginputlogin;
+
+            console.log('아이디:'+frm.user_id.value)
+            console.log('비밀번호:'+frm.user_pw.value)
+            console.log('비밀번호 확인:'+frm.user_pw_check.value)
+            console.log('이름:'+frm.user_name.value)
+            console.log('휴대폰번호:'+frm.user_phone.value)
+
+            alert(frm.user_id.value)
+            alert(frm.user_pw.value)
+            alert(frm.user_pw_check.value)
+            alert(frm.user_name.value)
+            alert(frm.user_phone.value)
+        }
+
+    </script>
+
+</head>
+<body>
+
+    <form name="coupanginputlogin">
+
+        아이디<input type="email" name="user_id"><br>
+        비밀번호<input type="password" name="user_pw"><br>
+        비밀번호 확인<input type="password" name="user_pw_check"><br>
+        이름<input type="text" name="user_name"><br>
+        휴대폰번호<input type="number" name="user_phone"><br>
+        <input type="button" value="회원가입" onclick="CoupangInputLogin()">
+
+
+    </form>
+    
+</body>
+</html>

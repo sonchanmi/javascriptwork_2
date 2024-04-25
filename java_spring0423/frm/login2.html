@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+
+        function login() {
+            var frm = document.loginfrm;
+            frm.action = "loginnext.html";
+            frm.method = "get";
+            frm.submit();
+        }
+
+    </script>
+
+</head>
+
+<body>
+
+    <form name="loginfrm">
+        userid <input type="text" name="userid">
+        passwd <input type="password" name="password">
+        <input type="button" value="버튼" onclick="login()">
+    </form>
+
+</body>
+
+</html>
